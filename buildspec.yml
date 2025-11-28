@@ -10,13 +10,13 @@ phases:
       - echo "Preparing static files"
       - ls -la
       - pwd
-      - mkdir -p output
-      - rsync -av --exclude output ./ output/
-      - rm -rf output/output
+      #- mkdir -p output
+      #- rsync -av --exclude output ./ output/
+      #- rm -rf output/output
 
 artifacts:
   files:
     - '**/*'
-  base-directory: output
+  #base-directory: output
 
  
